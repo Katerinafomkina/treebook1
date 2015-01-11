@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+   
 
-<%= yield %>
+ <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner"> 
+    <div class="container">
+     <a href="#" class="navbar-brand"> Treebook
+     <img alt="Brand" width="20" height="20" src="http://www.google.com/imgres?imgurl=http%3A%2F%2Fportpool.ru%2Fcontent%2Fwp_mobile_fire%2Fletters%2F13.jpg&imgrefurl=http%3A%2F%2Fportpool.ru%2Ffiery_letters%2F5627&h=570&w=570&tbnid=JPbaPeclv-WnCM%3A&zoom=1&docid=yND3f4u39H9BZM&ei=_oWyVMC1BqbjywPY04DIBw&tbm=isch&ved=0CFEQMygVMBU&iact=rc&uact=3&dur=819&page=2&start=13&ndsp=25" </a>
+     <ul class="nav">
+     	<li><%= link_to "All Statuses", statuses_path %> </li>
+    </div>
 
+  </div>
+ </div>  
+    <div class="container">
+        <%= yield %>
+    </div>
+  
 </body>
 </html>
